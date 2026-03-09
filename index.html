@@ -83,7 +83,11 @@
             color: var(--accent);
             margin: 0 0 12px;
         }
-        .card p { margin: 0 0 12px; font-size: 0.95rem; color: var(--text-muted); }
+        .card p {
+            margin: 0 0 12px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
         .card p:last-child { margin-bottom: 0; }
         .contact {
             display: inline-flex;
@@ -96,7 +100,19 @@
         }
         .contact:hover { color: var(--accent); text-decoration: underline; }
         .contact::before { content: "✉"; }
-        .updated { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; }
+        .updated {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        li { margin-bottom: 10px; }
+        li:last-child { margin-bottom: 0; }
     </style>
 </head>
 <body>
@@ -105,16 +121,45 @@
             <h1>Trek: daily practice mate</h1>
             <p class="tagline">Plan by cycle. Start with one tap.</p>
             <p class="intro">
-                A simple practice tracker for lessons. Plan your practice by lesson cycles, track reps and tempo, and keep a logbook of your progress. All data stays on your device.
+                A simple practice tracker for lessons. Plan your practice by lesson cycles, track reps and tempo, keep a logbook of your progress, and optionally record practice audio and sync your data through iCloud.
             </p>
-            <img src="MainPage.png" alt="Practice Mate – Home screen with calendar and practice items" class="screenshot">
+            <img src="MainPage.png" alt="Trek – home screen with calendar and practice items" class="screenshot">
         </div>
 
         <div class="card">
             <h2>Privacy Policy</h2>
-            <p>Trek: daily practice mate stores all practice data locally on your device. We do not collect, transmit, or share any personal information. No data is sent to external servers.</p>
-            <p>Your practice records, notes, and settings remain on your iPhone or iPad. You can delete the app at any time to remove all stored data.</p>
-            <p class="updated">Last updated: February 2026</p>
+            <p>
+                Trek: daily practice mate is designed to keep your practice data private and under your control.
+            </p>
+            <ul>
+                <li>
+                    <strong>Practice data:</strong> Your practice records, notes, counters, tempo settings, and other app content are stored on your device.
+                </li>
+                <li>
+                    <strong>Audio recordings:</strong> If you choose to use the recording feature, the app will request access to your device’s microphone. Recordings are created only when you start recording and are stored locally on your device unless you enable iCloud syncing.
+                </li>
+                <li>
+                    <strong>iCloud sync:</strong> If you enable iCloud, your app data and recordings may be synced securely through Apple’s iCloud services so your content can stay available across your Apple devices signed in to the same Apple ID.
+                </li>
+                <li>
+                    <strong>No third-party servers:</strong> We do not collect, sell, or share your personal information, and we do not send your app data to our own external servers.
+                </li>
+                <li>
+                    <strong>Your control:</strong> You can delete recordings, app data, or the app itself at any time. If iCloud sync is enabled, you can also manage your iCloud data through your Apple account and device settings.
+                </li>
+            </ul>
+            <p class="updated">Last updated: March 2026</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <p>
+                Trek may request access to the following features only when needed:
+            </p>
+            <ul>
+                <li><strong>Microphone:</strong> to record practice audio when you choose to use recording features.</li>
+                <li><strong>iCloud:</strong> to sync your practice data and recordings across your own Apple devices, if enabled.</li>
+            </ul>
         </div>
 
         <div class="card">
